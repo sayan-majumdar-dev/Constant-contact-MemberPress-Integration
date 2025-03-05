@@ -1,10 +1,9 @@
 <?php
 /**
- * Plugin Name: Active Media CC MemberPress Connector
- * Description: The Active Media CC MemberPress Connector helps to integrate MemberPress with Constant Contact for OAuth authentication and contact creation on member signups.
+ * Plugin Name: CC MemberPress Connector
+ * Description: CC MemberPress Connector helps to integrate MemberPress with Constant Contact for OAuth authentication and contact creation on member signups.
  * Version: 1.0
- * Author: Amber Goetz
- * Author URI: https://www.theactivemedia.com/
+ * Author: Sayan. M
  * License: GPL2
  */
 
@@ -394,7 +393,7 @@ class ConstantContactIntegration {
 
     function fetch_ccmp_entries() {
         global $wpdb;
-        $table_name = $wpdb->prefix . 'ccmp_entries'; // ✅ Fix table name spelling
+        $table_name = $wpdb->prefix . 'ccmp_entries'; 
     
         // Get request parameters for pagination
         $limit = isset($_POST['length']) ? intval($_POST['length']) : 10;
