@@ -1,0 +1,295 @@
+/* Target only the custom plugin settings page */
+.cc-admin-page .wrap {
+    max-width: 580px;
+    background: #ffffff;
+    padding: 2px 15px 2px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Headings */
+.cc-admin-page .wrap h1 {
+    color: #333;
+    font-size: 28px;
+    padding: 15px 20px 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0073aa;
+    font-weight: 700;
+}
+
+.cc-admin-page .wrap h2 {
+    text-align: center;
+    color: #444;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+/* Table Styling */
+.cc-admin-page .wrap .form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.cc-admin-page .wrap .form-table th {
+    text-align: left;
+    width: 20%;
+    font-weight: bold;
+    color: #555;
+}
+
+.cc-admin-page .wrap .form-table td {
+    padding: 12px;
+}
+
+/* Input Fields */
+.cc-admin-page .wrap input[type="text"],
+.cc-admin-page .wrap input[type="password"],
+.cc-admin-page .wrap input[type="url"] {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.cc-admin-page .wrap input[type="text"]:focus,
+.cc-admin-page .wrap input[type="password"]:focus,
+.cc-admin-page .wrap input[type="url"]:focus {
+    border-color: #0073aa;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 115, 170, 0.2);
+}
+
+/* Submit Button */
+.cc-admin-page .wrap .button-primary {
+    background: #0073aa;
+    border-radius: 6px;
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.2;
+    transition: background 0.3s ease-in-out;
+}
+
+.cc-admin-page .wrap .button-primary:hover {
+    background: #005f8d;
+}
+
+/* Connect & Revoke Buttons */
+.cc-admin-page .cc-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.cc-admin-page #cc_connect_button,
+.cc-admin-page #cc_revoke_button {
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.cc-admin-page #cc_connect_button {
+    background: #28a745;
+    color: white;
+    border: none;
+}
+
+.cc-admin-page #cc_connect_button:hover {
+    background: #218838;
+}
+
+.cc-admin-page #cc_revoke_button {
+    background: #d9534f;
+    color: white;
+    border: none;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.cc-admin-page #cc_revoke_button:hover {
+    background: #c9302c;
+}
+
+/* Adjust button group styling */
+.cc-admin-page .cc-button-group {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+/* Ensure buttons are in a line */
+.cc-admin-page .button-group .button {
+    display: inline-block;
+}
+
+.cc-admin-page .form-table-wrap {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+/* General Table Styling */
+#cc-entries-table {
+    width: 100% !important;
+    border-collapse: collapse;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+#cc-entries-table thead {
+    background: #007cba; /* WordPress blue */
+    color: white;
+    text-transform: uppercase;
+}
+
+#cc-entries-table thead th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #d8d8d8;
+    background-color: #d4d4d4;
+}
+
+/* Table Body */
+#cc-entries-table tbody tr {
+    transition: background 0.2s ease-in-out;
+}
+
+#cc-entries-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Hover Effect */
+#cc-entries-table tbody tr:hover {
+    background: rgba(0, 124, 186, 0.1);
+}
+
+/* Empty Table Message */
+.dataTables_empty {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+
+/* Pagination Styling */
+.dataTables_wrapper .dataTables_paginate {
+    margin-top: 10px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 4px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #007cba;
+    color: white;
+}
+
+/* Active Page Button */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #007cba;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #005b9a;
+}
+
+/* Search Box */
+.dataTables_filter input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.dataTables_filter input:focus {
+    border-color: #007cba;
+    box-shadow: 0px 0px 5px rgba(0, 124, 186, 0.5);
+}
+
+/* Loader Spinner */
+.dataTables_processing {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #007cba;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Table Footer */
+#cc-entries-table tfoot th {
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+.nav-tab-wrapper {
+    border-bottom: 0 !important;
+    padding: 0 !important;
+}
+#cc-settings {
+    margin-top: 20px;
+}
+
+#cc-entries-table_wrapper {
+    margin-top: 20px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    padding: 12px !important;
+    margin-bottom: 10px !important;
+}
+
+a.paginate_button.current {
+    margin: 10px !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.2em 1em !important;
+}
+
+/* Success & Error Messages */
+.cc-admin-page .cc-message {
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cc-admin-page .notice-success {
+    background: #e7f5e6;
+    color: #2b662b;
+    border-left: 4px solid #2b662b;
+}
+
+.cc-admin-page .notice-error {
+    background: #fbeaea;
+    color: #a94442;
+    border-left: 4px solid #a94442;
+}
