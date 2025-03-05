@@ -11,7 +11,7 @@ jQuery(document).ready(function ($) {
 
         // Show the selected tab content
         let targetTab = $(this).data("tab");
-        $("#" + targetTab).fadeIn(); // 💡 Use fadeIn() to ensure visibility
+        $("#" + targetTab).fadeIn();
 
         // If Submission Logs tab is clicked, initialize or reload DataTable
         if (targetTab === "cc-entries") {
