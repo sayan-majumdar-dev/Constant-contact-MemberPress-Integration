@@ -62,20 +62,6 @@ class ConstantContactIntegration {
     }
 
     /**
-     * Disables WordPress emojis - only for plugin backend
-    */
-
-    public function disable_emojis() {
-        remove_action('wp_head', 'print_emoji_detection_script', 7);
-        remove_action('wp_print_styles', 'print_emoji_styles');
-        remove_action('admin_print_scripts', 'print_emoji_detection_script');
-        remove_action('admin_print_styles', 'print_emoji_styles');
-        remove_filter('the_content', 'wp_staticize_emoji');
-        remove_filter('the_excerpt', 'wp_staticize_emoji');
-        remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
-    }
-
-    /**
     * Enqueues plugin styles and scripts.
     */
 
@@ -341,6 +327,7 @@ class ConstantContactIntegration {
             "first_name" => (string) $first_name,
             "last_name" => (string) $last_name,
             "create_source" => "Account",
+            "list_memberships" => ["<Put Your List ID here>"] // List ID to create the contact in a specific list in Constant Contact
         ];
     
         $response = wp_remote_post('https://api.cc.email/v3/contacts', [
